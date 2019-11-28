@@ -11,4 +11,5 @@ from very serious problems)
 * knowledge distillation (very insteresting idea: could it possible to distill information
 from several models)
 * fast weight from meta-net
-* like NAS
+* architecture search: NAS, model expansion
+* subnets sampled from a supernet (model compression)
