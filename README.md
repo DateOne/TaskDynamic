@@ -38,7 +38,6 @@ for epoch in epoch:\
 &nbsp;&nbsp;discrimitively updating (how)\
 &nbsp;&nbsp;#distill (as an experiment to see whether the distilled model can learn multiple
 &nbsp;&nbsp;distributions and surpass baseline; in a common sense, it might be better)\
-
 #test\
 for batch in dataset:\
 &nbsp;#distill more models (sound to be unreasonable but worth of attempt)\
