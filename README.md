@@ -22,27 +22,27 @@ Reconciling meta-learning and continual learning with online mixtures of tasks
 changing hyperparameters; subnets (robust)
 * conditional distillation
 1. pseudo-code\
-for epoch in epoch:
-  for batch in dataset:
-      train model
-      compute task2vec embedding (or other task embedding)
-      predict some hyper-parameters
-      train hyperparameter predictor
+for epoch in epoch:\
+  for batch in dataset:\
+      train model\
+      compute task2vec embedding (or other task embedding)\
+      predict some hyper-parameters\
+      train hyperparameter predictor\
 2. other methods except maml might not work
-3. pseudo-code
-#train
-for epoch in epoch:
-  for batch in dataset:
-    #discrimitively training
-    calculate neural network relationships with batch (how)
-    discrimitively updating (how)
-    #distill (as an experiment to see whether the distilled model can learn multiple 
-    distributions and surpass baseline; in a common sense, it might be better)
+3. pseudo-code\
+#train\
+for epoch in epoch:\
+  for batch in dataset:\
+    #discrimitively training\
+    calculate neural network relationships with batch (how)\
+    discrimitively updating (how)\
+    #distill (as an experiment to see whether the distilled model can learn multiple
+    distributions and surpass baseline; in a common sense, it might be better)\
 
-#test
-for batch in dataset:
-  #distill more models (sound to be unreasonable but worth of attempt)
-  calculate neural network relationships with batch (how, but same as training)
-  get the output
-  #or test with the distilled model
+#test\
+for batch in dataset:\
+  #distill more models (sound to be unreasonable but worth of attempt)\
+  calculate neural network relationships with batch (how, but same as training)\
+  get the output\
+  #or test with the distilled model\
     
