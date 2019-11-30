@@ -23,7 +23,7 @@ changing hyperparameters; subnets (robust)
 * conditional distillation
 1. pseudo-code\
 for epoch in epoch:\
-&nbspfor batch in dataset:\
+&nbsp;for batch in dataset:\
 &nbsp&nbsptrain model\
 &nbsp&nbspcompute task2vec embedding (or other task embedding)\
 &nbsp&nbsppredict some hyper-parameters\
