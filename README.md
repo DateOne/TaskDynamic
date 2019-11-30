@@ -23,26 +23,26 @@ changing hyperparameters; subnets (robust)
 * conditional distillation
 1. pseudo-code\
 for epoch in epoch:\
-  for batch in dataset:\
-      train model\
-      compute task2vec embedding (or other task embedding)\
-      predict some hyper-parameters\
-      train hyperparameter predictor\
+&nbspfor batch in dataset:\
+&nbsp&nbsptrain model\
+&nbsp&nbspcompute task2vec embedding (or other task embedding)\
+&nbsp&nbsppredict some hyper-parameters\
+&nbsp&nbsptrain hyperparameter predictor\
 2. other methods except maml might not work
 3. pseudo-code\
 #train\
 for epoch in epoch:\
-  for batch in dataset:\
-    #discrimitively training\
-    calculate neural network relationships with batch (how)\
-    discrimitively updating (how)\
-    #distill (as an experiment to see whether the distilled model can learn multiple
-    distributions and surpass baseline; in a common sense, it might be better)\
+&nbspfor batch in dataset:\
+&nbsp&nbsp#discrimitively training\
+&nbsp&nbspcalculate neural network relationships with batch (how)\
+&nbsp&nbspdiscrimitively updating (how)\
+&nbsp&nbsp#distill (as an experiment to see whether the distilled model can learn multiple
+&nbsp&nbspdistributions and surpass baseline; in a common sense, it might be better)\
 
 #test\
 for batch in dataset:\
-  #distill more models (sound to be unreasonable but worth of attempt)\
-  calculate neural network relationships with batch (how, but same as training)\
-  get the output\
-  #or test with the distilled model\
+&nbsp#distill more models (sound to be unreasonable but worth of attempt)\
+&nbspcalculate neural network relationships with batch (how, but same as training)\
+&nbspget the output\
+&nbsp#or test with the distilled model\
     
