@@ -21,7 +21,7 @@ Reconciling meta-learning and continual learning with online mixtures of tasks
 * task embedding: model gradient, loss gradient, fisher information; fast parameters:
 changing hyperparameters; subnets (robust)
 * conditional distillation
-1. pseudo-code
+1. pseudo-code\n
 for epoch in epoch:
   for batch in dataset:
       train model
