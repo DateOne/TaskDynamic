@@ -27,7 +27,7 @@ for epoch in epoch:\
 &nbsp;&nbsp;train model\
 &nbsp;&nbsp;compute task2vec embedding (or other task embedding)\
 &nbsp;&nbsp;predict some hyper-parameters\
-&nbsp;&nbsp;train hyperparameter predictor\
+&nbsp;&nbsp;train hyperparameter predictor
 2. other methods except maml might not work
 3. pseudo-code\
 #train\
